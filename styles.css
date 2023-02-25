@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-row {
+    display: flex;
+    width: 700px;
+}
+
+.grid {
+    flex: auto;
+    aspect-ratio: 1;
+    border: 1px solid black;
+}
