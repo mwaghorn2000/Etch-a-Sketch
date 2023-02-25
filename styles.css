@@ -3,7 +3,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: lightcyan;
 }
 
 h1 {
@@ -25,6 +24,7 @@ h1 {
     flex: auto;
     aspect-ratio: 1;
     border: 0.5px solid black;
+    
 }
 
 footer {

@@ -21,6 +21,7 @@ const resetGrid = (size) => {
     for (let x = 0; x < size; x++) {
       let gridDiv = document.createElement("div");
       gridDiv.className = "grid";
+      gridDiv.dataset.rgbPercent = "90";
       gridDivRow.appendChild(gridDiv);
     }
     container.appendChild(gridDivRow);
@@ -31,7 +32,11 @@ const resetGrid = (size) => {
   let grid = document.getElementsByClassName("grid");
   for (let j = 0; j < grid.length; j++) {
     grid[j].addEventListener("mouseenter", (event) => {
-      event.target.style.backgroundColor = "black";
+      const target = event.target;
+      const rgbValue = target.dataset.rgbPercent;
+      const rgbColor = `rgb(${rgbValue}%,${rgbValue}%,${rgbValue}%)`;
+      target.dataset.rgbPercent = parseInt(target.dataset.rgbPercent) - 10;
+      target.style["background"] = rgbColor;
     });
   }
 };
