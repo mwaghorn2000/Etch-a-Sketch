@@ -2,8 +2,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    background-color: lightcyan;
 }
 
+h1 {
+    padding: 0;
+    margin:0;
+}
+
+.reset {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
 .grid-row {
     display: flex;
     width: 700px;
@@ -12,5 +24,11 @@ body {
 .grid {
     flex: auto;
     aspect-ratio: 1;
-    border: 1px solid black;
+    border: 0.5px solid black;
+}
+
+footer {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
 }
